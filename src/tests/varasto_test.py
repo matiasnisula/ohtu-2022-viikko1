@@ -68,7 +68,7 @@ class TestVarasto(unittest.TestCase):
     def test_varastoa_ei_voi_luoda_negatiivisella_alku_saldolla(self):
         self.varasto = Varasto(3,alku_saldo=-3)
 
-        self.assertAlmostEqual(self.varasto.saldo, 1)
+        self.assertAlmostEqual(self.varasto.saldo, 0)
 
     def test_saldo_ei_ylita_tilavuutta_uuden_varaston_luomisessa(self):
         self.varasto = Varasto(4,alku_saldo=6)
