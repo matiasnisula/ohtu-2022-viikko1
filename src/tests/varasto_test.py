@@ -70,6 +70,7 @@ class TestVarasto(unittest.TestCase):
 
         self.assertAlmostEqual(self.varasto.saldo, 0)
 
+    
     def test_saldo_ei_ylita_tilavuutta_uuden_varaston_luomisessa(self):
         self.varasto = Varasto(4,alku_saldo=6)
 
