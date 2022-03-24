@@ -12,7 +12,7 @@ class Varasto:
             # täyteen ja ylimäärä hukkaan!
             self.saldo = tilavuus
 
-    def positiivinen_tilavuus(self, tilavuus): 
+    def positiivinen_tilavuus(self, tilavuus):
         if tilavuus > 0.0:
             return tilavuus
         return 0.0
